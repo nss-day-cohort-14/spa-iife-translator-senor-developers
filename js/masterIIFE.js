@@ -31,6 +31,8 @@ var Translate = (function() {
 				outputText.innerHTML = translation;
 
 			} else if (selectedLanguage === "german"){
+				translation = Translate.translateToGerman(textToTranslate);
+				outputText.innerHTML = translation;
 
 			} else {
 				outputText.innerHTML = "Please select your language first!"
