@@ -12,4 +12,4 @@ inputTextAreaBtn.addEventListener("click", function() {
 languageSelect.addEventListener("change", function(e) {
 	selectedLanguage = this.value;
 	console.log(selectedLanguage);
-})
+});

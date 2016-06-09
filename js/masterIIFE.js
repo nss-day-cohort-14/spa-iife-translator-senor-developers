@@ -1,7 +1,17 @@
 var Translate = (function() {
-	var englishToFrench = {};
-	var englishToGerman = {};
-	var englishToSpanish = {};
+
 	var inputString = '';
-	return {};
+	var langaugeToTranslate = '';
+
+	return {
+		getInputString: function(){
+			return inputString;
+		},
+		getLangaugeToTranslate: function(){
+			return LangaugeToTranslate;
+		},
+		translateInputString: function(){
+
+		}
+	};
 })();
