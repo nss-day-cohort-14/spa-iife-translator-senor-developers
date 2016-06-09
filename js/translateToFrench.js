@@ -9,7 +9,6 @@ var Translate = (function(translate) {
 			if (englishToFrench[splitText[i]] != undefined) {
 			splitText[i] = englishToFrench[splitText[i]]
 			}
-			console.log("splitText", splitText);
 		};
 		var translatedText = splitText.join(" ");
 		return translatedText;
