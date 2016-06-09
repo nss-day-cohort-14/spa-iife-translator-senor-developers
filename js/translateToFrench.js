@@ -4,9 +4,11 @@
 var Translate = (function(translate) {
 
 	translate.translateToFrench = function(textToTranslate) {
-		var splitText = textToTranslate.toLowerCase().split(" ");
+		var splitText = textToTranslate.toLowerCase().split(/[.,:;!?\ ]/);
 		for (var i = 0; i < splitText.length; i++) {
+			if (englishToFrench[splitText[i]] != undefined) {
 			splitText[i] = englishToFrench[splitText[i]]
+			}
 		};
 		var translatedText = splitText.join(" ");
 		return translatedText;
