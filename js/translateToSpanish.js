@@ -15,23 +15,20 @@ var lexicon = {
 	"a": "un/una",
 	"we": "nosotros"};
 
-translatorFunction.translateToSpanish = function(){
-	var Translate.inputStringArray = Translate.inputString.toLowerCase().split(' ');
+translatorFunction.translateToSpanish = function(text){
+	var inputStringArray = text.toLowerCase().split(' ');
 
-	for(let engKey in lexicon){
-		for (let i = 0; i < Translate.inputStringArray.length; i++){
-			if(engKey === Translate.inputStringArray[i]){
-				Translate.inputStringArray[i] = lexicon[engKey];
-				console.log(Translate.inputStringArray[i]);
+	for(let engKey in lexicon){ //this loop gets the key name
+		for (let i = 0; i < inputStringArray.length; i++){ //this loop compares it to the translate string array
+			if(engKey === inputStringArray[i]){ // if the key and the  array item are the same
+				inputStringArray[i] = lexicon[engKey]; // set the array value to the vale from the key:value pair if the condition is true
 			}
 		}	
 	}
-	Translate.inputString = Translate.inputStringArray.join(' ');
-	console.log(Translate.inputString);
-	return Translate.inputString;
+	text = inputStringArray.join(' '); //join the array back into a string
+	return text; //return the translated text
 };
 
-translatorFunction.translateToSpanish();
-	return translatorFunction;
+return translatorFunction; //return the public methods.
 
 })(Translate);
