@@ -20,7 +20,8 @@ translatorFunction.translateToSpanish = function(text){
 
 	for(let engKey in lexicon){ //this loop gets the key name
 		for (let i = 0; i < inputStringArray.length; i++){ //this loop compares it to the translate string array
-			if(engKey === inputStringArray[i]){ // if the key and the  array item are the same
+			currentArrayWord = inputStringArray[i];
+			if(engKey === currentArrayWord){ // if the key and the  array item are the same
 				inputStringArray[i] = lexicon[engKey]; // set the array value to the vale from the key:value pair if the condition is true
 			}
 		}	
