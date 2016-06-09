@@ -1,6 +1,11 @@
 # spa-iife-translator-senor-developers
 
-#Translatable Words
+#IFFE Translator by the Senor Developers
+
+Watch in amazement as your very own holiday greeting card is created! You even have the choice of Spanish, Fench or German!
+
+
+##Translatable Words
 + Christmas
 + Hanukkah
 + New
