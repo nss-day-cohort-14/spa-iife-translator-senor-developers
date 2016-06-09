@@ -1,7 +1,5 @@
 var Translate = (function(translatorFunction){
 
-INPUTSTRING = "Happy Christmas Hanukkah Year to you and you and you!";
-
 var lexicon = {
 	"christmas": "Navidad",
 	"hanukkah": "Hannkah",
@@ -18,19 +16,19 @@ var lexicon = {
 	"we": "nosotros"};
 
 translatorFunction.translateToSpanish = function(){
-	var INPUTSTRINGArray = INPUTSTRING.toLowerCase().split(' ');
+	var Translate.inputStringArray = Translate.inputString.toLowerCase().split(' ');
 
 	for(let engKey in lexicon){
-		for (let i = 0; i < INPUTSTRINGArray.length; i++){
-			if(engKey === INPUTSTRINGArray[i]){
-				INPUTSTRINGArray[i] = lexicon[engKey];
-				console.log(INPUTSTRINGArray[i]);
+		for (let i = 0; i < Translate.inputStringArray.length; i++){
+			if(engKey === Translate.inputStringArray[i]){
+				Translate.inputStringArray[i] = lexicon[engKey];
+				console.log(Translate.inputStringArray[i]);
 			}
 		}	
 	}
-	INPUTSTRING = INPUTSTRINGArray.join(' ');
-	console.log(INPUTSTRING);
-	return INPUTSTRING;
+	Translate.inputString = Translate.inputStringArray.join(' ');
+	console.log(Translate.inputString);
+	return Translate.inputString;
 };
 
 translatorFunction.translateToSpanish();

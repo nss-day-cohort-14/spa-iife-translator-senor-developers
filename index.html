@@ -3,14 +3,47 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>This is my driver</title>
-	<link rel="stylesheet" href="">
+	<title>Translator</title>
+	<link rel="stylesheet" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	
+	<div id="wrapper">
+		<!-- Start Top Input -->
+		<h1 id="title">Happy Holidays Translator</h1>
+			<div class="totalInputArea">
+			<div id="inputArea">
+				<h3 class="inputText">Please enter a holiday message</h3>
+				<textarea id="textAreaHome" rows="6" cols="40"></textarea>
+				<button type="button" id="textAreaSubmit">Submit</button>
+			</div>
+			<div id="selectArea">
+				<h3 class="inputText">Select a language that you would like your message to be in.</h3>
+				<div id="selectId">
+					<label for="languageChooser" class="itemsClass">Language</label>
+					<select name="languageChooser" id="languageChooser" class="chooser">
+	  					<option value="" selected></option> 
+	  					<option value="spanish">Spanish</option>
+	  					<option value="french">French</option>
+	  					<option value="german">German</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- End Top Input -->
+		<!-- Start Output -->
+		<div class="totalOutputArea">
+			<div class="cardImg totalCard">
+			</div>
+			<div id="cardOutput" class="totalCard">
+				<div id="translatedText">This is a test this is a test this is a test</div>
+			</div>
+		</div>
+	</div>
+		<!-- End Output -->
+<script src="/js/masterIIFE.js"></script>
+<script src="js/translateToSpanish.js"></script>	
+<script src="/js/DOMmanipulation.js"></script>
 
-
-	<script src="js/masterIIFE.js"></script>
-	<script src="js/translateToSpanish.js"></script>
 </body>
 </html>
