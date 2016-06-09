@@ -16,7 +16,7 @@ var lexicon = {
 	"we": "nosotros"};
 
 translatorFunction.translateToSpanish = function(text){
-	var inputStringArray = text.toLowerCase().split(' ');
+	var inputStringArray = text.toLowerCase().split(/[.,:;!?\ ]/);
 
 	for(let engKey in lexicon){ //this loop gets the key name
 		for (let i = 0; i < inputStringArray.length; i++){ //this loop compares it to the translate string array
