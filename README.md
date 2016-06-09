@@ -1,5 +1,3 @@
-# spa-iife-translator-senor-developers
-
 #IFFE Translator by the Senor Developers
 
 Watch in amazement as your very own holiday greeting card is created! You even have the choice of Spanish, Fench or German!
