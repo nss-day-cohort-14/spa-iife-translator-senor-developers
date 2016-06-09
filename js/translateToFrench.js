@@ -3,16 +3,13 @@
 
 var Translate = (function(translate) {
 
-	translate.translateToFrench = function(word) {
-		var splitText = textAreaValue.split(" ");
-		console.log("splitText", splitText);
+	translate.translateToFrench = function(textToTranslate) {
+		var splitText = textToTranslate.toLowerCase().split(" ");
 		for (var i = 0; i < splitText.length; i++) {
-			console.log("englishToFrench", englishToFrench[splitText[i]]);
 			splitText[i] = englishToFrench[splitText[i]]
-		}
-		console.log("splitText", splitText);
-		var translatedText = splitText.join(" ")
-		console.log("translatedText", translatedText);
+		};
+		var translatedText = splitText.join(" ");
+		return translatedText;
 	};
 	return translate
 })(Translate);

@@ -27,6 +27,8 @@ var Translate = (function() {
 				outputText.innerHTML = translation;
 
 			} else if (selectedLanguage === "french") {
+				translation = Translate.translateToFrench(textToTranslate);
+				outputText.innerHTML = translation;
 
 			} else if (selectedLanguage === "german"){
 
